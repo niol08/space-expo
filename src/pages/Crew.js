@@ -17,7 +17,7 @@ const Crew = () => {
         <h3 className='span' aria-hidden='true'>
           02
         </h3>
-        <h3>meeet your crew </h3>
+        <h3>meet your crew </h3>
       </div>
       <Swiper
         slidesPerView={1}
