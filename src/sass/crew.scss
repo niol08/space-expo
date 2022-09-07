@@ -1,0 +1,267 @@
+.crew > .header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+// img {
+//   object-fit: contain;
+// }
+.my-custom-pagination-div {
+  display: flex;
+  justify-content: center;
+}
+.swiper-slide,
+.swiper,
+.swiper-wrapper {
+  max-height: 100% !important;
+}
+
+@media screen and (max-width: 480px) {
+  .crew {
+    .header {
+      width: fit-content;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 1.2em;
+      color: #ffffff;
+      mix-blend-mode: normal;
+      font-weight: 700;
+      letter-spacing: 2.7px;
+      font-family: "Barlow Condensed", sans-serif;
+      text-transform: uppercase;
+      .span {
+        margin-right: 18px;
+        opacity: 0.25;
+      }
+      h3 {
+        line-height: 1.1875em;
+      }
+    }
+    .img-parent {
+      width: 90vw;
+      margin: 2em auto;
+      border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 32vw;
+      }
+    }
+    .main-content {
+      width: 90vw;
+      margin: 0 auto;
+      padding-top: 2em;
+      .role {
+        margin-bottom: 8px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        font-family: "Bellefair", serif;
+      }
+      .name {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: "Bellefair", serif;
+        margin-bottom: 1rem;
+      }
+      .bio {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #d0d6f9;
+        font-family: "Barlow Condensed", sans-serif;
+      }
+    }
+    .inner-flex {
+      display: flex;
+      flex-flow: column wrap;
+    }
+    .swiper-pagination-bullet {
+      margin-right: 1rem;
+      width: 10px;
+      height: 10px;
+      background: #ffffff;
+    }
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .crew {
+    .header {
+      width: fit-content;
+      margin-top: 2em;
+      margin-left: 1.925em;
+      margin-bottom: 3em;
+      font-size: 20px;
+      line-height: 1.2em;
+      color: #ffffff;
+      mix-blend-mode: normal;
+      font-weight: 700;
+      letter-spacing: 3.375px;
+      font-family: "Barlow Condensed", sans-serif;
+      text-transform: uppercase;
+      .span {
+        margin-right: 0.95em;
+        opacity: 0.25;
+      }
+    }
+    .flex {
+      display: flex;
+      flex-flow: column wrap;
+      margin-bottom: 0;
+    }
+    .img-parent {
+      width: 60vw;
+      height: 532px;
+      margin: 0 auto;
+      margin-top: 5rem;
+      order: 2;
+      img {
+        width: 100%;
+        height: 558px;
+      }
+    }
+    .inner-flex {
+      display: flex;
+      flex-flow: column wrap;
+      width: 60vw;
+      margin: 0 auto;
+      .role {
+        margin-bottom: 8px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        font-family: "Bellefair", serif;
+      }
+      .name {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: "Bellefair", serif;
+        margin-bottom: 1rem;
+      }
+      .bio {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #d0d6f9;
+        font-family: "Barlow Condensed", sans-serif;
+        margin-bottom: 2.5rem;
+      }
+    }
+    .my-custom-pagination-div {
+      order: 2;
+    }
+    .swiper-pagination-bullet {
+      margin-right: 1rem;
+      width: 10px;
+      height: 10px;
+      background: #ffffff;
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .crew {
+    .header {
+      width: fit-content;
+      margin-top: 4.75rem;
+      margin-left: 10.40625rem;
+      font-size: 28px;
+      line-height: 34px;
+      color: #ffffff;
+      mix-blend-mode: normal;
+      font-weight: 700;
+      letter-spacing: 4.725px;
+      font-family: "Barlow Condensed", sans-serif;
+      text-transform: uppercase;
+      .span {
+        margin-right: 1em;
+        opacity: 0.25;
+      }
+    }
+    .swiper-pagination-bullet {
+      margin-right: 24px;
+      width: 15px;
+      height: 15px;
+      background: #ffffff;
+    }
+    .flex {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+    .img-parent {
+      width: 38.5vw;
+      height: 712px;
+      order: 2;
+      align-self: flex-end;
+    }
+    .inner-flex {
+      width: 30.8vw;
+      display: flex;
+      flex-flow: column wrap;
+      padding-bottom: 5.875em;
+    }
+    .my-custom-pagination-div {
+      order: 2;
+      justify-content: left;
+    }
+    .role {
+      margin-bottom: 15px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 37px;
+      text-align: left;
+      text-transform: uppercase;
+      color: #ffffff;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+      font-family: "Bellefair", serif;
+    }
+    .name {
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 64px;
+      text-align: left;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-family: "Bellefair", serif;
+      margin-bottom: 27px;
+    }
+    .bio {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      text-align: left;
+      color: #d0d6f9;
+      font-family: "Barlow Condensed", sans-serif;
+      margin-bottom: 88px;
+    }
+    .swiper-pagination-bullet:hover {
+      background: hsl(0, 0%, 100%);
+      opacity: 0.5;
+    }
+  }
+}
