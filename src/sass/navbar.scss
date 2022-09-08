@@ -43,6 +43,9 @@ nav {
 }
 
 @media screen and (max-width: 480px) {
+  .logo {
+    width: 2em;
+  }
   .links {
     display: flex;
     flex-flow: column wrap;
