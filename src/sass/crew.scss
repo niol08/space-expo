@@ -3,9 +3,9 @@
   flex-flow: row wrap;
   align-items: center;
 }
-// img {
-//   object-fit: contain;
-// }
+img {
+  object-fit: contain;
+}
 .my-custom-pagination-div {
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@
   max-height: 100% !important;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (orientation: landscape) {
   .crew {
     .header {
       width: fit-content;
@@ -95,7 +95,86 @@
     }
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .crew {
+    .header {
+      width: fit-content;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 1.2em;
+      color: #ffffff;
+      mix-blend-mode: normal;
+      font-weight: 700;
+      letter-spacing: 2.7px;
+      font-family: "Barlow Condensed", sans-serif;
+      text-transform: uppercase;
+      .span {
+        margin-right: 18px;
+        opacity: 0.25;
+      }
+      h3 {
+        line-height: 1.1875em;
+      }
+    }
+    .img-parent {
+      width: 90vw;
+      margin: 2em auto;
+      border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 32vw;
+      }
+    }
+    .main-content {
+      width: 90vw;
+      margin: 0 auto;
+      padding-top: 2em;
+      .role {
+        margin-bottom: 8px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        font-family: "Bellefair", serif;
+      }
+      .name {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: "Bellefair", serif;
+        margin-bottom: 1rem;
+      }
+      .bio {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #d0d6f9;
+        font-family: "Barlow Condensed", sans-serif;
+      }
+    }
+    .inner-flex {
+      display: flex;
+      flex-flow: column wrap;
+    }
+    .swiper-pagination-bullet {
+      margin-right: 1rem;
+      width: 10px;
+      height: 10px;
+      background: #ffffff;
+    }
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   .crew {
     .header {
       width: fit-content;
@@ -180,7 +259,7 @@
     }
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .crew {
     .header {
       width: fit-content;

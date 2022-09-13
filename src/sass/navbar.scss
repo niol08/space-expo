@@ -117,12 +117,13 @@ nav {
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   nav {
     padding-top: 0;
     padding-right: 0;
     padding-left: 2em;
     padding-bottom: 0;
+    margin-bottom: 5em;
   }
   .toggle {
     display: none;
@@ -187,7 +188,7 @@ nav {
     align-items: center;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 1025px) {
   nav {
     margin-top: 2.5em;
     margin-left: 3.4375em;
