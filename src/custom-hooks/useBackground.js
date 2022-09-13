@@ -41,9 +41,9 @@ const useBackground = () => {
   useEffect(() => {
     if (viewPortWidth >= 1 && viewPortWidth <= 480) {
       setdeviceType("mobile")
-    } else if (viewPortWidth >= 481 && viewPortWidth <= 768) {
+    } else if (viewPortWidth >= 481 && viewPortWidth <= 1024) {
       setdeviceType("tablet")
-    } else if (viewPortWidth >= 769 && viewPortWidth <= 1440) {
+    } else if (viewPortWidth >= 1025) {
       setdeviceType("desktop")
     }
   }, [viewPortWidth])

@@ -6,7 +6,7 @@
 .portrait {
   display: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (orientation: portrait) {
   .technology {
     .header {
       width: fit-content;
@@ -103,7 +103,104 @@
     }
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 480px) and (orientation: landscape) {
+  .technology {
+    .header {
+      width: fit-content;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 1.2em;
+      color: #ffffff;
+      mix-blend-mode: normal;
+      font-weight: 700;
+      letter-spacing: 2.7px;
+      font-family: "Barlow Condensed", sans-serif;
+      text-transform: uppercase;
+      .span {
+        margin-right: 18px;
+        opacity: 0.25;
+      }
+      h3 {
+        line-height: 1.1875em;
+      }
+    }
+    .img-parent {
+      width: 100vw;
+      height: fit-content;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      .landscape {
+        display: block;
+        width: 100%;
+      }
+    }
+    .btn-parent {
+      width: fit-content;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: row wrap;
+      gap: 1rem;
+      margin-bottom: 1.625rem;
+      .btn {
+        background: none;
+        border: rgba(255, 255, 255, 0.1) 1.5px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #ffffff;
+        width: 2.5rem;
+        aspect-ratio: 1;
+        font-family: "Bellefair", serif;
+      }
+      .active-btn {
+        background: #ffffff;
+        color: #0b0d17;
+      }
+    }
+    .main-content {
+      width: 90vw;
+      margin: 0 auto;
+    }
+
+    .main-content > .term {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: 2.3625px;
+      color: #d0d6f9;
+      font-family: "Barlow Condensed", sans-serif;
+      margin-bottom: 9px;
+      text-transform: uppercase;
+    }
+    .main-content > .name {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-family: "Bellefair", serif;
+      margin-bottom: 1rem;
+    }
+    .main-content > .desc {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      font-family: "Barlow Condensed", sans-serif;
+      text-align: center;
+      color: #d0d6f9;
+    }
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   .technology {
     .header {
       width: fit-content;
@@ -198,7 +295,7 @@
     }
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .technology {
     .header {
       width: fit-content;
